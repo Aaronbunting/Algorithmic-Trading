@@ -8,9 +8,10 @@ Welcome to the Algorithmic Trading Optimization repository! Within these digital
 ## Project Essence
 This repository houses a collection of Jupyter notebooks, datasets, and resultant plots. Here's an insight into what each file/section entails:
 
-The central Jupyter notebook embodies the core of the machine learning models and trading algorithms.
-The 'Resources' folder serves as the vault for plots showcasing diverse trading algorithm performances.
-Pioneering Tasks
+* The central Jupyter notebook embodies the core of the machine learning models and trading algorithms.
+* The 'Resources' folder serves as the vault for plots showcasing diverse trading algorithm performances.
+
+## Tasks
 Within the contours of this project, four primary tasks take the center stage:
 
 ## 1. Establishing a Baseline Performance
