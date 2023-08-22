@@ -21,26 +21,19 @@ Our voyage commences with the implementation of a rudimentary moving average cro
 2. Refining the Baseline Trading Algorithm
 To elevate the baseline algorithm's performance, meticulous steps are undertaken:
 
-Tweaking the Training Algorithm: The training dataset's dimensions are adjusted. The dataset is segmented across different timeframes, and the notebook is rerun with these new parameters. The outcome is a noticeable enhancement in algorithm performance, with strategy returns rising from 1.5 to 1.6 and actual returns escalating from 1.4 to 1.5.
-Initially, the training data endpoint was set with an offset of 3 months, accompanied by short and long windows for the SMA set at 4 and 100, respectively.
-
-
-Setting the training data endpoint with a 3-month offset
-training_end = X.index.min() + DateOffset(months=3)
-
-Configuring the short and long windows
-short_window = 4 long_window = 100
+* Tweaking the Training Algorithm: The training dataset's dimensions are adjusted. The dataset is segmented across different timeframes, and the notebook is rerun with these new parameters. The outcome is a noticeable enhancement in algorithm performance, with strategy returns rising from 1.5 to 1.6 and actual returns escalating from 1.4 to 1.5.
+* Initially, the training data endpoint was set with an offset of 3 months, accompanied by short and long windows for the SMA set at 4 and 100, respectively.
+* Setting the training data endpoint with a 3-month offset
+* training_end = X.index.min() + DateOffset(months=3)
+* Configuring the short and long windows
+* short_window = 4 long_window = 100
 
 Following this adjustment, the training data endpoint was shifted with a 5-month offset, while the short and long windows were refined to 2 and 60, respectively.
-
-Setting the training data endpoint with a 5-month offset
-training_end = X.index.min() + DateOffset(months=5)
-
-Fine-tuning the short and long windows
-short_window = 2 long_window = 60
+* Setting the training data endpoint with a 5-month offset training_end = X.index.min() + DateOffset(months=5)
+* Fine-tuning the short and long windows short_window = 2 long_window = 60
 
 Fine-tuning the Training Algorithm: The SMA algorithm's windows underwent further refinement. Post adjustment, the notebook was rerun, yielding improved trading algorithm performance.
-After fine-tuning, the parameters that yielded the most substantial boost to trading algorithm returns were retained. A revised cumulative return plot was fashioned:
+* After fine-tuning, the parameters that yielded the most substantial boost to trading algorithm returns were retained. A revised cumulative return plot was fashioned:
 
 ## Cumulative Returns Plot 2
 
