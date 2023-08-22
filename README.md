@@ -17,7 +17,7 @@ Within the contours of this project, four primary tasks take the center stage:
 ## 1. Establishing a Baseline Performance
 Our voyage commences with the implementation of a rudimentary moving average crossover (SMA) trading strategy, bolstered by sklearn's support vector machine (SVM) classifier. This initial trading algorithm sets the stage by offering a performance baseline. To capture this essence visually, a cumulative return plot makes its appearance:
 
-## Cumulative Returns Plot 1
+## 2. Cumulative Returns Plot 1
 
 2. Refining the Baseline Trading Algorithm
 To elevate the baseline algorithm's performance, meticulous steps are undertaken:
@@ -36,14 +36,14 @@ Following this adjustment, the training data endpoint was shifted with a 5-month
 Fine-tuning the Training Algorithm: The SMA algorithm's windows underwent further refinement. Post adjustment, the notebook was rerun, yielding improved trading algorithm performance.
 * After fine-tuning, the parameters that yielded the most substantial boost to trading algorithm returns were retained. A revised cumulative return plot was fashioned:
 
-## Cumulative Returns Plot 2
+## 3. Cumulative Returns Plot 2
 
 3. Assessing a Novel Machine Learning Classifier
 The next phase witnesses an evaluation of a fresh machine learning classifier - the AdaBoost algorithm. The model is trained using the training data, and its performance is rigorously backtested. The results, however, indicate a subpar performance when compared to baseline models. The strategy return dwindles to 1.3, signifying weaker trading prowess in comparison. Below lies the PNG image encapsulating the cumulative returns plot for this updated trading algorithm:
 
-## Cumulative Returns Plot 3
+## 4. Cumulative Returns Plot 3
 
-4. Conclusive Evaluation
+ Conclusive Evaluation
 Our analysis draws to a close, culminating in a comprehensive evaluation report. Here, we outline our observations and discoveries:
 
 - The meticulous fine-tuning of the baseline trading algorithm, encompassing the adjustment of training dataset size and SMA input features, led to substantial enhancements in algorithmic performance. Strategy returns surged from 1.5 to 1.6, while actual returns escalated from 1.4 to 1.5.
